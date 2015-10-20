@@ -2223,20 +2223,17 @@ no parameters.
     def initialize
     end
 
-    # followed by other public instance methods
     def some_method
     end
 
-    # protected and private methods are grouped near the end
-    protected
-
+    # Private and/or protected methods should be explicitly stated
     def some_protected_method
     end
-
-    private
+    protected :some_protected_method
 
     def some_private_method
     end
+    private :some_private_method
   end
   ```
 
